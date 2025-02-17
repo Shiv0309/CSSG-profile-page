@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Page</title>
+    <style>
+        /*  this block will contain all the stylisc element specifications for each part of the page */
+        body {
+            font-family: Arial, sans-serif; 
+            background-color: #fafafa; 
+            margin: 0; 
+            padding: 0; 
+        } /* sets the styles for the body and they are arial, sans-seriff font, a white background color, and margin and padding of 0 */
+        
+        /* Header styles */
+        .header {
+            background-color: aliceblue; 
+            padding: 15px; 
+            text-align: center; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        /* Header text style */
+        .header h1 {
+            margin: 0; 
+            font-size: 24px; 
+            color: #333; 
+        }
+
+        /* Profile container styles */
+        .profile-container {
+            display: flex; 
+            justify-content: center; 
+            padding: 20px; 
+            background-color: #fff; 
+            margin: 20px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        /* Profile picture styles */
+        .profile-container img {
+            width: 120px; 
+            height: 120px;
+            border-radius: 50%; 
+            margin-right: 20px; /* Add space to the right of the profile picture */
+        }
+
+        /* Profile info styles */
+        .profile-container .profile-info {
+            display: flex; 
+            flex-direction: column; /* Stack the profile info vertically */
+            justify-content: center; /* Center content vertically */
+        }
+
+        /* Style for the profile username */
+        .profile-container .profile-info h2 {
+            margin: 0; 
+            color: #333; 
+        }
+
+        /* Style for the bio */
+        .profile-container .profile-info p {
+            color: #777; 
+        }
+
+        /* Followers stats container styles */
+        .followers-stats {
+            display: flex; 
+            justify-content: center; /* Center the stats horizontally */
+            margin-top: 20px; 
+        }
+
+        /* Individual stat item styles */
+        .stat {
+            margin: 0 15px; /* Add horizontal space between stats */
+            text-align: center; 
+        }
+
+        /* Style for stat number */
+        .stat h3 {
+            margin: 0; 
+            font-size: 20px; 
+            color: #333; 
+        }
+
+        /* Style for stat label */
+        .stat p {
+            color: #777; 
+        }
+
+        /* Posts section using CSS Grid layout */
+        .posts {
+            display: grid; /* Use CSS Grid */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjust columns */
+            gap: 15px; /* Set gap between posts */
+            padding: 20px;
+        }
+
+        /* Individual post styles */
+        .post {
+            background-color: #fff; 
+            overflow: hidden; /* Prevent image overflow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+        }
+
+        /* Style for images in posts */
+        .post img {
+            width: 100%; /* Make image fill the post container */
+            height: auto; /* Maintain image aspect ratio */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section with the title -->
+    <div class="header">
+        <h1>Instagram</h1>
+    </div>
+
+    <!-- Profile section -->
+    <div class="profile-container">
+        <img src="profilepic.jpg" alt="Profile Picture"> 
+        <div class="profile-info">
+            <h2>@shivapalpanoori</h2> 
+            <p>@uncchapelhill</p> 
+        </div>
+    </div>
+
+    <!-- Followers stats section -->
+    <div class="followers-stats">
+        <div class="stat">
+            <h3>6</h3>
+            <p>Posts</p>
+        </div>
+        <div class="stat">
+            <h3>511</h3>
+            <p>Followers</p>
+        </div>
+        <div class="stat">
+            <h3>590</h3>
+            <p>Following</p>
+        </div>
+    </div>
+
+    <!-- Posts section: in order for the images to display, I had to create add all of them to my assignment 1 folder within the CSSG folder! --> 
+    <div class="posts">
+        <div class="post">
+            <img src="post1.jpg" alt="Post 1"> 
+        <div class="post">
+            <img src="post2.jpg" alt="Post 2"> 
+        </div>
+        <div class="post">
+            <img src="post3.jpg" alt="Post 3"> 
+        </div>
+        <div class="post">
+            <img src="post4.jpg" alt="Post 4"> 
+        </div>
+        <div class="post">
+            <img src="post5.jpg" alt="Post 5"> 
+        </div>
+        <div class="post">
+            <img src="post6.jpg" alt="Post 6"> 
+        </div>
+    </div>
+
+</body>
+</html>
